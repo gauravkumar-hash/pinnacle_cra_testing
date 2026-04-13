@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "sg.com.pinnaclefamilyclinic.test.pinnaclesgplus",
+    "sha256_cert_fingerprints": [
+      "10:A0:35:96:EC:EE:3F:78:BA:F3:05:3A:1B:56:49:4E:B7:50:13:78:5A:F8:1A:A5:3E:38:BB:9B:5F:FA:DA:76"
+    ]
+  }
+}]

@@ -1,0 +1,52 @@
+{
+  "name": "frontend-admin-web-ui",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "gen-client": "openapi-ts --input http://localhost:8000/openapi.json --output ./src/services/client --client axios"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@react-pdf/renderer": "^4.3.2",
+    "@supabase/supabase-js": "^2.89.0",
+    "@tanstack/react-query": "^5.90.15",
+    "@tanstack/react-query-devtools": "^5.91.2",
+    "@tanstack/react-table": "^8.21.3",
+    "antd": "^5.29.3",
+    "axios": "^1.13.2",
+    "dayjs": "^1.11.19",
+    "json-as-xlsx": "^2.5.6",
+    "lodash": "^4.17.21",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-pdf": "^9.2.1",
+    "react-router-dom": "^6.30.2",
+    "react-signature-canvas": "1.1.0-alpha.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.48.3",
+    "@types/lodash": "^4.17.21",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.26",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  },
+  "packageManager": "pnpm@10.18.2+sha512.9fb969fa749b3ade6035e0f109f0b8a60b5d08a1a87fdf72e337da90dcc93336e2280ca4e44f2358a649b83c17959e9993e777c2080879f3801e6f0d999ad3dd"
+}

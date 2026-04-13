@@ -1,0 +1,13 @@
+.sigCanvas {
+    background-color: rgb(0,0,0,0);
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+    max-height: 200px;
+}
