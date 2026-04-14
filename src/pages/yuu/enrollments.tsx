@@ -27,9 +27,10 @@ const fetchEnrollments = async (page: number, search: string, startDate?: string
   if (startDate) params.set("start_date", startDate);
   if (endDate) params.set("end_date", endDate);
 
-  console.log("🔍 FETCH Yuu Enrollments:", params.toString());
-
-  const token = typeof OpenAPI.TOKEN === 'function' ? await OpenAPI.TOKEN({}) : OpenAPI.TOKEN;
+  // Corrected token retrieval
+  const token = typeof OpenAPI.TOKEN === 'function' 
+    ? await OpenAPI.TOKEN({ method: 'GET', url: '/api/admin/yuu/enrollments' }) 
+    : OpenAPI.TOKEN;
 
   const res = await fetch(`${BASE_URL}/api/admin/yuu/enrollments?${params.toString()}`, {
     credentials: "include",
